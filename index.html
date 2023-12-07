@@ -91,7 +91,7 @@
         }
     }
 
-    function handleDragEndMobile() {
+    function handleDragEnd() {
         const items = document.querySelectorAll('.drag-item');
 
         desktopWidgetOrder = [];
@@ -109,7 +109,7 @@
             item.addEventListener('dragover', handleDragOver, false);
             item.addEventListener('dragleave', handleDragLeave, false);
             item.addEventListener('drop', handleDrop, false);
-            item.addEventListener('dragend', handleDragEndMobile, false);
+            item.addEventListener('dragend', handleDragEnd, false);
         });
     }
 
